@@ -6,4 +6,7 @@ int getProcId(const wchar_t* target) {
   PROCESSENTRY32 pe32;
   pe32.dwSize = sizeof(PROCESSENTRY32);
   HANDLE hSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+  do {
+    if (wcsmp
+  }
 }
